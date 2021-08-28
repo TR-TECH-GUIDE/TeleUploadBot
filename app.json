@@ -1,0 +1,46 @@
+{
+  "name": "Tele Upload Bot",
+  "description": "A simple url upload and file to link bot made using telethon library!",
+  "logo": "https://telegra.ph/file/e0269c799bb10bfb87ab3.jpg",
+  "keywords": [
+    "telegram",
+    "uploader"
+  ],
+  "repository": "https://github.com/TR-TECH-GUIDE/TeleUploadBot",
+  "website": "https://github.com/TR-TECH-GUIDE/TeleUploadBot",
+  "success_url": "https://t.me/SLTeleUploadBot",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable environment variables (don't change this value)",
+      "value": "ANYTHING"
+    },
+    "APIID": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": "",
+      "required": true
+    },
+    "APIHASH": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": "",
+      "required": true
+    },
+    "BOTTOKEN": {
+      "description": "Get this token from @BotFather",
+      "value": "",
+      "required": true
+    },
+    "USERNAME": {
+      "description": "Username of your bot",
+      "value": "",
+      "required": true
+    },
+    "DOWNLOADPATH": {
+      "description": "Download path of bot (don't change this value)",
+      "value": "Downloads/",
+      "required": true
+    }
+  },
+  "buildpacks": [{
+    "url": "heroku/python"
+  }]
+}
